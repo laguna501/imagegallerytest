@@ -59,6 +59,7 @@
                                ]
                    }
          var player = new PPTVPlayer(cfg);
+         player.onReady.add(function(){ player.setUserName('0001');player.play(0); });
          </script>
 </div>
 <h2>Lightbox image gallery</h2>
