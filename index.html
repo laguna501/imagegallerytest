@@ -47,6 +47,20 @@
     <a class="play-pause"></a>
 </div>
 <br>
+<div class="video_player" id="pptv_playerbox" style="background:#000;width:960px;height:540px;margin:0 auto;position:relative;z-index:100;">
+         <script type="text/javascript" src="http://player.atv-net.com/jsplayer/pid/4746954.js"></script>
+         <script type="text/javascript">
+                   var cfg = {
+                               "ctx": "o=PleonjitMedia_SP",
+                               "playList": [
+                                   {
+                                       "pl": "pptv:\/\/0a2imaaYppbOpqY="
+                                   }
+                               ]
+                   }
+         var player = new PPTVPlayer(cfg);
+         </script>
+</div>
 <h2>Lightbox image gallery</h2>
 <!-- The container for the list of example images -->
 <div id="links" class="links"></div>
