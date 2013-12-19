@@ -26,18 +26,14 @@
 <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
-<h1>blueimp Gallery</h1>
-<p><a href="https://github.com/blueimp/Gallery">blueimp Gallery</a> is a touch-enabled, responsive and customizable image &amp; video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers.<br>
-It features swipe, mouse and keyboard navigation, transition effects, slideshow functionality, fullscreen support and on-demand content loading and can be extended to display additional content types.</p>
-<ul class="navigation">
-    <li><a href="https://github.com/blueimp/Gallery/tags">Download</a></li>
-    <li><a href="https://github.com/blueimp/Gallery">Source Code</a></li>
-    <li><a href="https://github.com/blueimp/Gallery/blob/master/README.md">Documentation</a></li>
-    <li><a href="https://blueimp.net">&copy; Sebastian Tschan</a></li>
-</ul>
-<p><a href="https://github.com/blueimp/Gallery">blueimp Gallery</a> is based on <a href="http://swipejs.com/">Swipe</a>.</p>
-<br>
+<h1>PJML Support Test</h1>
 <h2>Carousel image gallery</h2>
+<!-- LFCTV BANNER SCRIPT -->
+<script src="http://flywebdata.blob.core.windows.net/banner/lfctvbanner.js">
+    var bannerWidth = 1000;
+    var bannerHeight = 500;
+</script>
+<!-- END LFCTV BANNER SCRIPT —>
 <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
 <div id="blueimp-image-carousel" class="blueimp-gallery blueimp-gallery-carousel">
     <div class="slides"></div>
@@ -57,6 +53,21 @@ It features swipe, mouse and keyboard navigation, transition effects, slideshow 
     <a class="play-pause"></a>
 </div>
 <br>
+<!-- <div class="video_player" id="pptv_playerbox" style="background:#000;width:960px;height:540px;margin:0 auto;position:relative;z-index:100;">
+         <script type="text/javascript" src="http://player.atv-net.com/jsplayer/pid/4746954.js"></script>
+         <script type="text/javascript">
+                   var cfg = {
+                               "ctx": "o=PleonjitMedia_SP",
+                               "playList": [
+                                   {
+                                       "pl": "pptv:\/\/0a2imaaYppbOpqY="
+                                   }
+                               ]
+                   }
+         var player = new PPTVPlayer(cfg);
+         player.onReady.add(function(){ player.setUserName('0001');player.play(0); });
+         </script>
+</div> -->
 <h2>Lightbox image gallery</h2>
 <!-- The container for the list of example images -->
 <div id="links" class="links"></div>
@@ -91,5 +102,59 @@ if (!window.jQuery) {
 </script>
 <script src="js/jquery.blueimp-gallery.js"></script>
 <script src="js/demo.js"></script>
+<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+</style>
+<script type="text/javascript">
+  if (typeof(Zenbox) !== "undefined") {
+    Zenbox.init({
+      dropboxID:   "20089945",
+      url:         "https://pjm.zendesk.com",
+      tabTooltip:  "Support",
+      tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_support.png",
+      tabColor:    "black",
+      tabPosition: "Left"
+    });
+  }
+</script>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {
+    // TODO: The current logged in user's email address.
+    email: "john.doe@example.com",
+    // TODO: The current logged in user's sign-up date as a Unix timestamp.
+    created_at: 1234567890,
+    app_id: "844b3d3daf3ad519fc71e2d87197f8b9142aa3b8"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://static.intercomcdn.com/intercom.v1.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+<script type="text/javascript">
+  var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+  analytics.load("s7g0klvpnj");
+  
+  analytics.identify('019mr8mf4r', {
+    name             : 'Achilles',
+    email            : 'achilles@segment.io',
+    subscriptionPlan : 'Premium',
+    friendCount      : 29
+});
+  
+  analytics.track('Purchased a Shirt', {
+    revenue: 25.99,
+    size: 'medium',
+    item: 'Leap to Conclusions T-Shirt',
+    color: 'white'
+});
+  
+</script>
+<!-- begin SnapEngage code -->
+<script type="text/javascript">
+(function() {
+var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/b5394851-8f4b-4fe3-ae08-eadaef806fe0.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+})();
+</script>
+<!-- end SnapEngage code -->
 </body> 
 </html>
